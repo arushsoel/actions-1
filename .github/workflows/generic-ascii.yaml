@@ -19,5 +19,5 @@ jobs:
     - name: Read file
       run: cat dragon.txt
 
-    -name: List repo files
-     run: ls -ltra    
+    - name: List repo files
+      run: ls -ltra    
