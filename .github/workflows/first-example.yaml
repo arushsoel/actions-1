@@ -1,0 +1,14 @@
+name: My firsy worflow
+on: push
+jobs:
+  fist_job:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Welcome
+      run: echo "My first gh actions job"
+
+    - name: List Files
+      run: ls
+
+    - name: Read
+      run: cat README.md
