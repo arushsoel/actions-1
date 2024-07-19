@@ -1,4 +1,4 @@
-name: My firsy worflow
+name: My first worflow
 on: push
 jobs:
   fist_job:
@@ -6,11 +6,16 @@ jobs:
    steps:
     - name: Checkout Repo
       uses: actions/checkout@v4 
-    - name: Welcome
-      run: echo "My first gh actions job"
+    - name: List and Read files
+      run: |
+        echo "My first gh actions job"
+        ls -lrta
+        cat README.md
+    # - name: List Files
+    #   run: ls
 
-    - name: List Files
-      run: ls
-
-    - name: Read
-      run: cat README.md
+    # - name: Read
+    #   run: cat README.md
+    
+    - name: Generate ASCII network
+      run: cowsay -f dragon "Run for cover, I AM A DRAGON.... RARR" >> dragon.txt
